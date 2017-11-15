@@ -30,7 +30,7 @@
         <p>Description of Visualization here</p>
     </div>
     <div id="chart"></div>
-    <div id="dataset-picker">
+    <!--<div id="dataset-picker">-->
     </div>
     <script type="text/javascript">
       var margin = { top: 50, right: 0, bottom: 100, left: 30 },
@@ -132,7 +132,6 @@
 
       heatmapChart(datasets[0]);
      
-     /*
       var datasetpicker = d3.select("#dataset-picker").selectAll(".dataset-button")
         .data(datasets);
 
@@ -144,7 +143,6 @@
         .on("click", function(d) {
           heatmapChart(d);
         });
-     */
     </script>
   </body>
 </html>
