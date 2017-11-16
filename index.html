@@ -3,6 +3,13 @@
 <html>
   <head>
     <style>
+
+      body{
+
+        font-family: Consolas, courier;
+        text-align: center;
+
+      }
       rect.bordered {
         stroke: #E6E6E6;
         stroke-width:2px;   
@@ -54,12 +61,14 @@
     </style>
     <script src="https://d3js.org/d3.v3.js"></script>
     <script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
-
+    <title>DJS- Phone Call Heat Map</title>
   </head>
   <body>
     <div id="headers">
-        <h2>Tooltip - Choice DJS Weekly Phone Call</h2>
-        <p>Description of Visualization here</p>
+        <br>
+        <br>
+        <h2>Choice DJS Weekly Phone Call Heat Map</h2>
+        <p style="padding: 0 80px">The visualization below displays the time of day from July 2016 - July 2017 during which AmeriCorps members were able to successfully contact the youths participating in the Choice DJS program they served via phone call. The colored squares represent the total number of calls in which youths were successfully contacted during that time of day across the entire year. Lighter colors represent fewer successful calls and darker blue squares represent higher numbers of successful calls.</p>
     </div>
     <div id="chart"></div>
     <!--<div id="dataset-picker">-->
