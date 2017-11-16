@@ -4,10 +4,6 @@
   <head>
     <style>
 
-      #header{
-        font-family: Consolas, courier;
-        text-align: center;
-      }
       rect.bordered {
         stroke: #E6E6E6;
         stroke-width:2px;   
@@ -62,13 +58,13 @@
     <title>DJS- Phone Call Heat Map</title>
   </head>
   <body>
-    <div id="headers">
+    <div id="headers" style="text-align: center; font-family: Consolas, courier; padding: 0 80px">
         <br>
         <br>
         <h2>Choice DJS Weekly Phone Call Heat Map</h2>
-        <p style="padding: 0 80px">The visualization below displays the time of day from July 2016 - July 2017 during which AmeriCorps members were able to successfully contact the youths participating in the Choice DJS program they served via phone call. The colored squares represent the total number of calls in which youths were successfully contacted during that time of day across the entire year. Lighter colors represent fewer successful calls and darker blue squares represent higher numbers of successful calls.</p>
+        <p>The visualization below displays the time of day from July 2016 - July 2017 during which AmeriCorps members were able to successfully contact the youths participating in the Choice DJS program they served via phone call. The colored squares represent the total number of calls in which youths were successfully contacted during that time of day across the entire year. Lighter colors represent fewer successful calls and darker blue squares represent higher numbers of successful calls.</p>
     </div>
-    <div id="chart" style="padding: 0 80px"></div>
+    <div id="chart" style="margin: 0 auto; width: 100px; "></div>
     <!--<div id="dataset-picker">-->
     </div>
     <script type="text/javascript">
