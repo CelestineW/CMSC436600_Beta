@@ -87,6 +87,8 @@
           var cards = svg.selectAll(".hour")
               .data(data, function(d) {return d.day+':'+d.hour;});
 
+          console.log(cards)
+
           cards.append("title");
 
           cards.enter().append("rect")
@@ -97,7 +99,7 @@
               .attr("class", "hour bordered")
               .attr("width", gridSize)
               .attr("height", gridSize)
-              .attr("text_cw", function(d) {return d.value;})
+              .attr("call_value", function(d) {return d.value;})
               .style("fill", colors[0]);
 
           cards.transition().duration(1000)
