@@ -97,7 +97,7 @@
               .attr("class", "hour bordered")
               .attr("width", gridSize)
               .attr("height", gridSize)
-              .attr("text_cw", d.value)
+              .attr("text_cw", function(d) {return d.value;})
               .style("fill", colors[0]);
 
           cards.transition().duration(1000)
